@@ -1,0 +1,332 @@
+*{
+	padding:0px;
+	margin:0px;
+	/*font-family:apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";*/
+}
+
+body {
+	background-color: #000510;
+	background-image:url("https://www.seekpng.com/png/full/176-1762337_png-aesthetic-stars-aesthetic-png.png");
+    min-height: 100vh;
+	animation: animateCloud 10s linear infinite;
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	font-family: sans-serif;
+}
+    
+@keyframes animateCloud  {0% {background-position: 0 0;}100% {background-position: 1280px 0;}}
+
+nav {
+	position:fixed;
+}
+
+.nav-main {
+	background-color: #101020;
+	width:100%;
+	height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	border-bottom: #1a1a1a solid 1px;
+}
+
+.nav-bars {
+	cursor: pointer;
+	padding: 14px 16px;
+}
+
+.nav-bars:hover {
+	background-color: transparent;
+	color: #f00;
+}
+
+.nav-texts {
+	color: #fff;
+}
+
+.nav-main a {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration:none;
+	text-align: center;
+	font-weight: 600;
+	color:white;
+	display:inline-block;
+}
+
+.nav-button {
+	background-color:transparent;
+	text-decoration:none;
+	color: #fff;
+	text-align: center;
+	border-color: transparent;
+	transition: color 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+	background-clip: text;
+	color: #e02020;
+    border-radius: 0.3em;
+}
+
+.nav-menu-right a {
+	float: right;
+	text-align: center;
+	background-color: transparent;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	border-color: transparent;
+}
+
+.nav-button-right a {
+	float: right;
+	background-color: transparent;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	border-color: transparent;
+}
+
+.nav-button-right {
+	color: #fff;
+	float: right;
+}
+
+@keyframes backgroundScroll {
+	0% {background-position: 0% 0%;}
+	50% {background-position: 500% 500%;}
+	100% {background-position: 0% 0%;}
+}
+
+.div1 {
+	width: 100%;
+	left: 10vw;
+	display: flex;
+	background-color: #c00a0a;
+	background-image: url(images/img_JannyCoins2.png);
+	background-size: 120%;
+	background-repeat: repeat;
+    animation: backgroundScroll 60s;
+    position: static;
+	animation-iteration-count: infinite;
+}
+
+.div1-image {
+	position: flex;
+	left: 10vw;
+}
+
+.janny-image {
+	width:auto;
+}
+
+.div1-main {
+	align-items: center;
+	padding: 15%;
+}
+
+.div1-texts {
+	display: block;
+	text-align: center;
+}
+
+.div1-main-texts {
+	font-family: "Muli", sans-serif;
+	display: block;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+}
+
+#div1-texts-text1 {
+	font-size: 30px;
+	font-weight: 400;
+	color: #fff;
+	display: flex;
+    justify-content: center;
+	font-weight:400;
+}
+
+#div1-texts-text2 {
+	font-size: 50px;
+	font-weight: 400;
+	color: #fff;
+	display: flex;
+    justify-content: center;
+	padding: 10px;
+	font-weight:400;
+}
+
+#div1-texts-text3 {
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	display: flex;
+    justify-content: center;
+	padding: 10px;
+	font-weight:400;
+}
+
+.div1-buttons {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.div1-main-buttons {
+	justify-content: center;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 10px 30px;
+	border-radius: 1.8em;
+	transition: background-color 0.5s ease-out 100ms;
+	outline: 1px solid #fff;
+	margin: 0px 10px;
+}
+
+#div1-main-buttons-add {
+	background-color: #d03030;
+}
+
+#div1-main-buttons-support {
+	background-color: #303030;
+}
+
+#div1-main-buttons-add:hover {
+	background-color: transparent;
+}
+
+#div1-main-buttons-support:hover {
+	background-color: transparent;
+}
+
+.div2 {
+	width: 100%;
+	display: flex;
+}
+
+.div2-main {
+	margin: 10% auto;
+}
+
+.div2-main-texts {
+	text-align: center;
+	justify-content: center;
+	color: #fff;
+	font-family: "Muli", sans-serif;
+}
+
+.div2-main-images {
+	margin: 5px;
+	width: 25px;
+}
+
+.div2-align-text-image {
+	background-color: #000;
+	display: flex;
+   	align-items: center;
+	justify-content: center;
+}
+
+#div2-main-text-hi {
+	font-size: 30px;
+}
+
+#div2-main-text-aboutme {
+	font-size: 15px;
+}
+
+.panel-divs {
+	width: 100%;
+	display: flex;
+}
+
+.mod-main {
+	margin: 10% auto;
+	text-shadow: 5px 5px #000;
+}
+
+.fun-main {
+	margin: 10% auto;
+}
+
+.act-main {
+	margin: 10% auto;
+}
+
+.util-main {
+	margin: 10% auto;
+}
+
+.ps-main {
+	margin: 10% auto;
+}
+
+.eco-main {
+	margin: 10% auto;
+}
+
+.soc-main {
+	margin: 10% auto;
+}
+
+.conf-main {
+	margin: 10% auto;
+}
+
+.main-panels {
+	width: 1200px;
+	margin: auto;
+}
+
+.div-reveal-texts {
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	font-family: "Signika Negative", sans-serif;
+	animation: revealText 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes revealText {
+	0% {transform: translate(0, 0%);}
+	20% {transform: translateY(-20%);}
+	40% {transform: translateY(0%);}
+	60% {transform: translateY(20%);}
+	80% {transform: translateY(0%);}
+	100% {transform: translate(0, 0%);}
+}
+
+.footer-main {
+	border: solid;
+	border-top: #1a1a1a solid 1px;
+	height: 200px;
+}
+
+.footer-info {
+	width: 100%;
+	height: 100px;
+	margin: auto;
+}
+
+.footer-block-texts {
+	float: left;
+	margin: 40px;
+	width: 16%;
+	color: #fff;
+	text-align: center;
+}
+
+.footer-texts {
+	line-height: 50px;
+}
+
+.footer-texts-list {
+	list-style-type: none;
+}
+
+#footer-image-diamond {
+	width: 40px;
+}
