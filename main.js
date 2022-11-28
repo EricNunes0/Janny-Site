@@ -1,5 +1,5 @@
 let i = 0
-let siteVersion = `〔💎〕Versão 1.0.1\n〔📅〕Última atualização: 25/11/2022`;
+let siteVersion = `〔💎〕Versão 1.0.4\n〔📅〕Última atualização: 28/11/2022`;
 
 function alertVersion() {
 	alert(siteVersion);

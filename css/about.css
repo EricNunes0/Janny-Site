@@ -1,6 +1,7 @@
-html, body {
-	padding: 0;
-	margin:0;
+*{
+	padding:0px;
+	margin:0px;
+	/*font-family:apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";*/
 }
 
 body {
@@ -11,9 +12,6 @@ body {
 	background-position: 0 0;
 	font-family: sans-serif;
 }
-    
-@keyframes animateCloud  {0% {background-position: 0 0;}100% {background-position: 1280px 0;}}
-
 nav {
 	position:fixed;
 }
@@ -30,27 +28,29 @@ nav {
 
 .nav-bars {
 	cursor: pointer;
-	width: 10%;
-	height: 10vh;
+	padding: 14px 16px;
 }
 
 .nav-bars:hover {
+	background-color: transparent;
 	color: #f00;
 }
 
-.nav-bars a {
+.nav-texts {
+	color: #fff;
+}
+
+.nav-main a {
+	padding-left: 10px;
+	padding-right: 10px;
 	text-decoration:none;
 	text-align: center;
 	font-weight: 600;
-	display: inline-block;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	color:white;
+	display:inline-block;
 }
 
-.nav-texts {
-	width: 100%;
-	height: 100%;
+.nav-button {
 	background-color:transparent;
 	text-decoration:none;
 	color: #fff;
@@ -59,10 +59,10 @@ nav {
 	transition: color 0.3s ease-in-out;
 }
 
-.nav-texts:hover {
+.nav-button:hover {
 	background-clip: text;
-    border-radius: 0.3em;
 	color: #e02020;
+    border-radius: 0.3em;
 }
 
 .nav-menu-right a {
@@ -89,40 +89,18 @@ nav {
 	float: right;
 }
 
-.first-section {
+.div1 {
 	width: 100%;
-	height: 100vh;
-	position: static;
-}
-
-@keyframes backgroundScroll {
-	0% {background-position: 0% 0%;}
-	50% {background-position: 500% 500%;}
-	100% {background-position: 0% 0%;}
-}
-
-.first-section-main {
-	background-color: #c00a0a;
-	background-image: url(images/img_JannyCoins2.png);
-	background-size: auto;
-	background-repeat: repeat;
-    animation: backgroundScroll 60s;
-	animation-iteration-count: infinite;
-}
-
-.first-section-main-image-texts-align {
+	left: 10vw;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-}
-
-.janny-image {
-	width: 100%;
+    position: static;
+	animation-iteration-count: infinite;
 }
 
 .div1-main {
 	align-items: center;
+	padding: 15% 0;
+	margin: auto;
 }
 
 .div1-texts {
@@ -132,19 +110,24 @@ nav {
 
 .div1-main-texts {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	display: block;
 	text-align: center;
+	color: #fff;
 	text-shadow: 2px 2px #000;
 }
 
 #div1-texts-text1 {
 	font-size: 30px;
+	font-weight: 400;
 	color: #fff;
 	display: flex;
     justify-content: center;
+	font-weight:400;
 }
 
 #div1-texts-text2 {
 	font-size: 50px;
+	font-weight: 400;
 	color: #fff;
 	display: flex;
     justify-content: center;
@@ -157,6 +140,8 @@ nav {
 	color: #fff;
 	display: flex;
     justify-content: center;
+	padding: 10px;
+	font-weight:400;
 }
 
 .div1-buttons {
@@ -193,20 +178,20 @@ nav {
 	background-color: transparent;
 }
 
-.second-section {
+.div2 {
 	width: 100%;
 	display: flex;
 }
 
 .div2-main {
-	margin: 8vh auto;
+	margin: 10% auto;
 }
 
 .div2-main-texts {
 	text-align: center;
 	justify-content: center;
 	color: #fff;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Muli", sans-serif;
 }
 
 .div2-main-images {
@@ -215,6 +200,7 @@ nav {
 }
 
 .div2-align-text-image {
+	background-color: #000;
 	display: flex;
    	align-items: center;
 	justify-content: center;
@@ -281,7 +267,7 @@ nav {
 }
 
 .reveal-texts {
-	position: static;
+	background-color: #ff0000;
 }
 
 @keyframes revealText {
