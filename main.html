@@ -9,17 +9,25 @@
 		</head>
 		<body>
 			<nav class = "nav-main" id = "article">
-				<div class = "nav-bars" id = "nav-bars-red">
-					<a href = "" class = "nav-texts" id = "nav-text-red" onclick = "alertVersion()">Janny</a>
-				</div>
-				<div class = "nav-bars" id = "nav-bars-blue">
-					<a href = "html/about.html" class = "nav-texts" id = "nav-text-blue">Sobre</a>
-				</div>
-				<div class = "nav-bars" id = "nav-bars-yellow">
-						<a href = "" class = "nav-texts" id = "nav-button-yellow">Comandos</a>
-				</div>
-				<div class = "nav-bars" id = "nav-bars-green">
-						<a href = "https://discord.gg/77ax3PyXgn" class = "nav-texts" id = "nav-button-green"> Suporte</a>
+				<div class = "nav-main-bar">
+					<div class = "nav-bars" id = "nav-bars-red">
+						<a href = "" class = "nav-texts" id = "nav-text-red" onclick = "alertVersion()">Janny</a>
+					</div>
+					<div class = "nav-bars" id = "nav-bars-blue">
+						<a href = "html/about.html" class = "nav-texts" id = "nav-text-blue">Sobre</a>
+					</div>
+					<div class = "nav-bars" id = "nav-bars-yellow">
+							<a href = "" class = "nav-texts" id = "nav-text-yellow">Comandos</a>
+					</div>
+					<div class = "nav-bars" id = "nav-bars-green">
+							<a href = "https://discord.gg/77ax3PyXgn" class = "nav-texts" id = "nav-text-green">Suporte</a>
+					</div>
+					<div class = "nav-bars" id = "nav-bars-enter">
+						<div class = "nav-bar-discord-enter">
+							<img src = "images/img_discord.png" class = "nav-bars-image" id = "nav-bars-enter-discord-logo"></img>
+							<a href = "https://discord.gg/77ax3PyXgn" class = "nav-texts" id = "nav-text-discord">Entrar</a>
+						</div>
+					</div>
 				</div>
 			</nav>
 			<section class = "first-section">
@@ -31,7 +39,7 @@
 						<div class = "first-section-main-texts-buttons">
 							<div class = "div1-texts" id = "footer-text-main">
 								<p class = "div1-main-texts" id = "div1-texts-text1" align="center">Conheça o</p>
-								<p class = "div1-main-texts" id = "div1-texts-text2" align="center">JANNY</p>
+								<p class = "div1-main-texts" id = "div1-texts-text2" align="center">Janny</p>
 								<p class = "div1-main-texts" id = "div1-texts-text3" align="center">O bot com tudo e mais um pouco!</p>
 							</div>
 							<div class = "div1-buttons" align = "center">
@@ -52,62 +60,66 @@
 						<p class = "div2-main-texts" id = "div2-main-text-aboutme">Estou aqui para ajudar você a entreter o seu servidor!</p>
 				</div>
 			</section>
-			<div class = "panel-divs" id = "mod-div">
-				<div class = "mod-main">
-					<div class = "div-reveal-texts">
-						<span class = "reveal-texts" id = "mod-reveal-text">Moderação</span>
+			<section class = "panel-section">
+				<div class = "panel-divs" id = "mod-div">
+					<div class = "mod-main">
+						<div class = "panel-main-texts">
+							<span class = "reveal-texts" id = "mod-reveal-text">Moderação</span>
+						</div>
+						<div class = "panel-main-images">
+						<img class = "panel-images" id = "mod-image-panel" src = "images/img_modPanel.png"></img>
+						</div>
 					</div>
-					<img class = "main-panels" id = "mod-image-panel" src = "images/img_modPanel.png"></img>
 				</div>
-			</div>
-			<div class = "panel-divs" id = "fun-div">
-				<div class = "fun-main">
-					<div class = "div-reveal-texts">
-						<span class = "reveal-texts" id = "mod-reveal-text">Diversão</span>
+				<div class = "panel-divs" id = "fun-div">
+					<div class = "fun-main">
+						<div class = "panel-main-texts">
+							<span class = "reveal-texts" id = "mod-reveal-text">Diversão</span>
+						</div>
+						<img class = "panel-images" id = "fun-image-panel" src = "images/img_funPanel.png"></img>
 					</div>
-					<img class = "main-panels" id = "fun-image-panel" src = "images/img_funPanel.png"></img>
 				</div>
-			</div>
-			<div class = "panel-divs" id = "act-div">
-				<div class = "act-main">
-					<div class = "div-reveal-texts">
-						<span class = "reveal-texts" id = "mod-reveal-text">Ações</span>
+				<div class = "panel-divs" id = "act-div">
+					<div class = "act-main">
+						<div class = "panel-main-texts">
+							<span class = "reveal-texts" id = "mod-reveal-text">Ações</span>
+						</div>
+						<img class = "panel-images" id = "act-image-panel" src = "images/img_actPanel.png"></img>
 					</div>
-					<img class = "main-panels" id = "act-image-panel" src = "images/img_actPanel.png"></img>
 				</div>
-			</div>
-			<div class = "panel-divs" id = "util-div">
-				<div class = "util-main">
-					<div class = "div-reveal-texts">
-						<span class = "reveal-texts" id = "mod-reveal-text">Utilidades</span>
+				<div class = "panel-divs" id = "util-div">
+					<div class = "util-main">
+						<div class = "panel-main-texts">
+							<span class = "reveal-texts" id = "mod-reveal-text">Utilidades</span>
+						</div>
+						<img class = "panel-images" id = "util-image-panel" src = "images/img_utilPanel.png"></img>
 					</div>
-					<img class = "main-panels" id = "util-image-panel" src = "images/img_utilPanel.png"></img>
 				</div>
-			</div>
-			<div class = "panel-divs" id = "ps-div">
-				<div class = "ps-main">
-					<div class = "div-reveal-texts">
-						<span class = "reveal-texts" id = "mod-reveal-text">Edições de Imagens</span>
+				<div class = "panel-divs" id = "ps-div">
+					<div class = "ps-main">
+						<div class = "panel-main-texts">
+							<span class = "reveal-texts" id = "mod-reveal-text">Edições de Imagens</span>
+						</div>
+						<img class = "panel-images" id = "ps-image-panel" src = "images/img_psPanel.png"></img>
 					</div>
-					<img class = "main-panels" id = "ps-image-panel" src = "images/img_psPanel.png"></img>
 				</div>
-			</div>
-			<div class = "panel-divs" id = "eco-div">
-				<div class = "eco-main">
-					<div class = "div-reveal-texts">
-						<span class = "reveal-texts" id = "mod-reveal-text">Economia</span>
+				<div class = "panel-divs" id = "eco-div">
+					<div class = "eco-main">
+						<div class = "panel-main-texts">
+							<span class = "reveal-texts" id = "mod-reveal-text">Economia</span>
+						</div>
+						<img class = "panel-images" id = "eco-image-panel" src = "images/img_ecoPanel.png"></img>
 					</div>
-					<img class = "main-panels" id = "eco-image-panel" src = "images/img_ecoPanel.png"></img>
 				</div>
-			</div>
-			<div class = "panel-divs" id = "soc-div">
-				<div class = "soc-main">
-					<div class = "div-reveal-texts">
-						<span class = "reveal-texts" id = "soc-reveal-text">Social</span>
+				<div class = "panel-divs" id = "soc-div">
+					<div class = "soc-main">
+						<div class = "panel-main-texts">
+							<span class = "reveal-texts" id = "soc-reveal-text">Social</span>
+						</div>
+						<img class = "panel-images" id = "soc-image-panel" src = "images/img_socPanel.png"></img>
 					</div>
-					<img class = "main-panels" id = "soc-image-panel" src = "images/img_socPanel.png"></img>
 				</div>
-			</div>
+			</section>
 			<footer class = "footer-main">
 				<div class = "footer-info">
 					<div class = "footer-block-texts" id = "footer-block-text-createdby">
