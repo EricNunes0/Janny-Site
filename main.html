@@ -11,7 +11,7 @@
 			<nav class = "nav-main" id = "article">
 				<div class = "nav-main-bar">
 					<div class = "nav-bars" id = "nav-bars-red">
-						<a href = "" class = "nav-texts" id = "nav-text-red" onclick = "alertVersion()">Janny</a>
+						<a href = "main.html" class = "nav-texts" id = "nav-text-red" onclick = "alertVersion()">Janny</a>
 					</div>
 					<div class = "nav-bars" id = "nav-bars-blue">
 						<a href = "html/about.html" class = "nav-texts" id = "nav-text-blue">Sobre</a>
@@ -54,10 +54,10 @@
 				<div class = "div2-main">
 					<div class = "div2-align-text-image">
 						<p class = "div2-main-texts" id = "div2-main-text-hi">Prazer, eu sou o Janny!</p>
-						<img class = "div2-main-images" src="images/img_catblush.png" onclick = "sum()"></img>
-						</div>
-						<p class = "div2-main-texts" id = "div2-main-text-aboutme">Sou um bot focado com multifuncionalidades, como economia, diversão, moderação e utilidades.</p>
-						<p class = "div2-main-texts" id = "div2-main-text-aboutme">Estou aqui para ajudar você a entreter o seu servidor!</p>
+						<img class = "div2-main-images" id = "catblush" src="images/img_catblush.png" onclick = "catBlush()"></img>
+					</div>
+					<p class = "div2-main-texts" id = "div2-main-text-aboutme">Sou um bot focado com multifuncionalidades, como economia, diversão, moderação e utilidades.</p>
+					<p class = "div2-main-texts" id = "div2-main-text-aboutme">Estou aqui para ajudar você a entreter o seu servidor!</p>
 				</div>
 			</section>
 			<section class = "panel-section">
@@ -128,7 +128,7 @@
 					<div class = "footer-block-texts" id = "footer-block-text1">
 						<h3 class = "footer-texts" id = "footer-text-bot">Bot</h3>
 						<ul class = "footer-texts-list">
-							<li><a class = "footer-texts" id = "footer-text-about">Sobre</a></li>
+							<li><a onclick = "openAboutPage()" class = "footer-texts" id = "footer-text-about">Sobre</a></li>
 							<li><a class = "footer-texts" id = "footer-text-commands">Comandos</a></li>
 							<li><a class = "footer-texts" id = "footer-text-help">Ajuda</a></li>
 							<li><a class = "footer-texts" id = "footer-text-support">Suporte</a></li>
