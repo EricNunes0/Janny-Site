@@ -7,14 +7,13 @@
 body {
 	background-color: #000510;
 	min-height: 100vh;
-	animation: animateCloud 10s linear infinite;
-	background-repeat: repeat-x;
 	background-position: 0 0;
-	font-family: sans-serif;
+	font-family: "Proxima Nova", sans-serif;
 }
+
 nav {
 	position:fixed;
-	z-index: 1;
+	z-index: 1
 }
 
 .nav-main {
@@ -29,14 +28,14 @@ nav {
 
 .nav-main-bar {
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 	width: 100%;
 }
 
 .nav-bars {
 	cursor: pointer;
-	width: 10%;
+	width: 150px;
 	height: 10vh;
 }
 
@@ -133,26 +132,39 @@ nav {
 	float: right;
 }
 
-.div1 {
+.first-section {
 	width: 100%;
-	left: 10vw;
-	display: flex;
+	height: 100vh;
     position: static;
+	background-color: #d000f0;
+}
+
+.first-section-main {
+	height: 100vh;
+	background-image: url(../images/img_jannyCoinsPurple.png);
+	background-size: auto;
+	background-repeat: repeat;
+    animation: backgroundScroll 20s ease-in-out;
 	animation-iteration-count: infinite;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
-.div1-main {
-	align-items: center;
-	padding: 15% 0;
-	margin: auto;
+@keyframes backgroundScroll {
+	0% {background-position: 0% 0;}
+	50% {background-position: -1474px 0;}
+	100% {background-position: 0% 0;}
 }
 
-.div1-texts {
-	display: block;
+.first-section-texts {
+	display: flex;
+	justify-content: center;
 	text-align: center;
+    flex-direction: column;
 }
 
-.div1-main-texts {
+.first-section-main-texts {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	display: block;
 	text-align: center;
@@ -160,7 +172,7 @@ nav {
 	text-shadow: 2px 2px #000;
 }
 
-#div1-texts-text1 {
+#first-section-texts-text1 {
 	font-size: 30px;
 	font-weight: 400;
 	color: #fff;
@@ -169,7 +181,7 @@ nav {
 	font-weight:400;
 }
 
-#div1-texts-text2 {
+#first-section-texts-text2 {
 	font-size: 50px;
 	font-weight: 400;
 	color: #fff;
@@ -178,7 +190,7 @@ nav {
 	font-weight:400;
 }
 
-#div1-texts-text3 {
+#first-section-texts-text3 {
 	font-size: 20px;
 	font-weight: 400;
 	color: #fff;
@@ -188,13 +200,14 @@ nav {
 	font-weight:400;
 }
 
-.div1-buttons {
+.first-section-buttons {
 	display: flex;
 	text-align: center;
 	justify-content: center;
+	align-items: center;
 }
 
-.div1-main-buttons {
+.first-section-main-buttons {
 	justify-content: center;
 	color: #fff;
 	text-decoration: none;
@@ -206,118 +219,12 @@ nav {
 	margin: 0px 10px;
 }
 
-#div1-main-buttons-add {
-	background-color: #d03030;
+#first-section-main-buttons-claim {
+	background-color: #d030d0;
 }
 
-#div1-main-buttons-support {
-	background-color: #303030;
-}
-
-#div1-main-buttons-add:hover {
+#first-section-main-buttons-claim:hover {
 	background-color: transparent;
-}
-
-#div1-main-buttons-support:hover {
-	background-color: transparent;
-}
-
-.div2 {
-	width: 100%;
-	display: flex;
-}
-
-.div2-main {
-	margin: 10% auto;
-}
-
-.div2-main-texts {
-	text-align: center;
-	justify-content: center;
-	color: #fff;
-	font-family: "Muli", sans-serif;
-}
-
-.div2-main-images {
-	margin: 5px;
-	width: 25px;
-}
-
-.div2-align-text-image {
-	background-color: #000;
-	display: flex;
-   	align-items: center;
-	justify-content: center;
-}
-
-#div2-main-text-hi {
-	font-size: 30px;
-}
-
-#div2-main-text-aboutme {
-	font-size: 15px;
-}
-
-.panel-divs {
-	width: 100%;
-	display: flex;
-}
-
-.mod-main {
-	margin: 10% auto;
-	text-shadow: 5px 5px #000;
-}
-
-.fun-main {
-	margin: 10% auto;
-}
-
-.act-main {
-	margin: 10% auto;
-}
-
-.util-main {
-	margin: 10% auto;
-}
-
-.ps-main {
-	margin: 10% auto;
-}
-
-.eco-main {
-	margin: 10% auto;
-}
-
-.soc-main {
-	margin: 10% auto;
-}
-
-.conf-main {
-	margin: 10% auto;
-}
-
-.main-panels {
-	width: 1200px;
-	margin: auto;
-}
-
-.div-reveal-texts {
-	text-align: center;
-	color: #fff;
-	font-size: 50px;
-	font-family: "Signika Negative", sans-serif;
-	animation: revealText 10s;
-	animation-iteration-count: infinite;
-}
-
-.reveal-texts {
-	background-color: #ff0000;
-}
-
-@keyframes revealText {
-	0% {transform: translate(0, 0%);}
-	50% {transform: translateY(-20%);}
-	100% {transform: translate(0, 0%);}
 }
 
 .footer-main {
